@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Ticket</title>
+    
+	<meta name="viewport">
+    <style>  
+        
+        .wrapper, html, body {
+          height: 100%;
+          margin: 0;
+        }
+
+        .wrapper {
+          display: flex;
+          flex-direction: row;
+        }
+        
+        .left-half-of-screen {
+          float: left;
+          background-size: cover;
+          background-color: red;
+          flex: auto;
+        }
+        
+        .right-half-of-screen {
+          float: right;
+          border: 6px solid white;
+          background-size: cover;
+          background-color: grey;
+          flex: auto;
+          
+        }
+
+        .right-half-of-screen p, .left-half-of-screen p {
+          margin-left: 10px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      <div class="left-half-of-screen">
+        <p id="errmsg">hello</p>
+      </div>
+      
+      <div class="right-half-of-screen">
+        <p>test</p>
+      </div>
+    
+    </div>
+  </body>
+</html>
